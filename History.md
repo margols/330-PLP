@@ -40,7 +40,8 @@ Follow the instructions prompted through the download, MatLab comes with a progr
 
 ### Writing Comments in MatLab
 - The symbol % can be used to comment in MatLab
-``` %this is how you write a comment
+``` cadence 
+%this is how you write a comment
 ``` 
 
 
