@@ -31,6 +31,10 @@ MatLab Documentation: [Mathworks](https://www.mathworks.com/help/matlab/)
 Available Reference Guide: [Amazon Link](https://www.amazon.com/Getting-Started-MATLAB-Introduction-Scientists/dp/0199731241) 
 Hello World Powerpoint from Berkeley: [Berkeley Slides](https://math.berkeley.edu/~ehallman/98-fa18/lectures/lectureNotes1.pdf) 
 
+
+(---------------------------------------------------------------------------------------------------------------------------------------------------------------------)
+
+
 #Getting Started 
 Installing MatLab:
 MatLab is available for a 30 day free trial follow this link: [Downloading MatLab](https://www.mathworks.com/downloads/message/error_page/unlicensed?release=R2022b)
