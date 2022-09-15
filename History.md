@@ -35,7 +35,7 @@ Hello World Powerpoint from Berkeley: [Berkeley Slides](https://math.berkeley.ed
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-#Getting Started 
+# Getting Started 
 Installing MatLab:
 MatLab is available for a 30 day free trial follow this link: [Downloading MatLab](https://www.mathworks.com/downloads/message/error_page/unlicensed?release=R2022b)
   - Most university's have licenses or have the software downloaded on a Virutal Machine
