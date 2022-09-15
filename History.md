@@ -47,7 +47,8 @@ Follow the instructions prompted through the download, MatLab comes with a progr
 In order to run code press the Run Selection button on the toolbar.
 <img width="1213" alt="Screen Shot 2022-09-15 at 6 04 19 PM" src="https://user-images.githubusercontent.com/113360762/190516881-61af568d-fbd1-42e4-ad29-67b9d8283d3e.png">
 
-###Writing "Hello World"
+## Writing "Hello World"
+
 Using the fprintf() statemnet outputs a formated string 
 Source: Hello World Powerpoint from Berkeley: [Berkeley Slides](https://math.berkeley.edu/~ehallman/98-fa18/lectures/lectureNotes1.pdf)  
 
