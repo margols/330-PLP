@@ -44,7 +44,7 @@ Follow the instructions prompted through the download, MatLab comes with a progr
 %this is how you write a comment
 ``` 
 
-In order to run code press the Run Selection button on the toolbar.
+- In order to run code press the Run Selection button on the toolbar.
 <img width="1213" alt="Screen Shot 2022-09-15 at 6 04 19 PM" src="https://user-images.githubusercontent.com/113360762/190516881-61af568d-fbd1-42e4-ad29-67b9d8283d3e.png">
 
 ## Writing "Hello World"
@@ -55,7 +55,7 @@ Source: Hello World Powerpoint from Berkeley: [Berkeley Slides](https://math.ber
 Using disp(x) displays the value in the variable x
 Source: [MATLAB Function Reference](http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/ref/display.html#:~:text=display%20(MATLAB%20Functions)&text=display(X)%20prints%20the%20value,sin(A)%3B%20does%20not.)  
 
-Either foramt above will display hello in the Command Window
+Either format above will display Hello World in the Command Window
 
 <img width="699" alt="Screen Shot 2022-09-15 at 6 04 07 PM" src="https://user-images.githubusercontent.com/113360762/190516860-8ae44f88-3fb1-47c4-8e5f-1ddf81d459ae.png">
 
