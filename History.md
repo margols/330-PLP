@@ -32,7 +32,7 @@ Available Reference Guide: [Amazon Link](https://www.amazon.com/Getting-Started-
 Hello World Powerpoint from Berkeley: [Berkeley Slides](https://math.berkeley.edu/~ehallman/98-fa18/lectures/lectureNotes1.pdf) 
 
 
-(---------------------------------------------------------------------------------------------------------------------------------------------------------------------)
+---------------------------------------------------------------------------------------------------------------------------------------
 
 
 #Getting Started 
