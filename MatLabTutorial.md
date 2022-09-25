@@ -205,15 +205,71 @@ x+z % will store the output in ans, printing it out to the terminal as well
 Source: [Double](https://www.mathworks.com/help/matlab/ref/double.html) 
 
 **Boolean**
+Source: [Using Boolean in MatLab](https://www.educba.com/matlab-boolean/) 
+- Boolean values of are stored as 0 and 1 with 0=False and 1=True:
+- EXAMPLE CODE:
+        - Using Boolean in And statements:
+        - Program determines if there is a 0 in the variables: 
+            ``` cadence
+        x=45.6700
+        y=34
+        r=0 
+        if( x && y)
+            disp("both values are not zero") 
+        else:
+            disp("the values are zero") 
+        end 
+        
+        if (x&& r)
+            disp("both numbers are not zero")
+        else
+            disp("There is a zero present")
+        end 
+  ```
+        
 
-**Arrays and Lists**
+**Arrays**
+Source: [Arrays](https://www.mathworks.com/help/matlab/learn_matlab/array-indexing.html) 
+
+Arrays can be used to index specfic elements:
+``` cadence
+%Arrays
+A=[1 2 3; 5 6 7;8 7 9;1 9 8];
+disp(A)
+Output:
+     1     2     3
+     5     6     7
+     8     7     9
+     1     9     8
 
 
+%indexing arrays
+
+A(2,3) %access the 2 row, and the third element 
+Output: 7
+```
+Cell Arrays: Can hold multiple different variable types
+- Empty cell arrays can be created by setting the variable equal to {}
+        - cellA={}
+EXAMPLE:
+```cadence
+%Cell arrays:
+cellA= {67, 8.90, "cells"}; 
+disp(cellA)
+```
 **Dictionary** 
+Due to the matrix structure of MatLab, a Map object is used to link values with corresponding keys
+
+```
+cadence 
+key={'dog', 'cat'}; 
+value=[12,67];
+M=containers.Map(key,value)
+M('dog') %output 12
+```
 
 
-
-
+--------------------------------------------------------------------------------------------------------
 
 
 
