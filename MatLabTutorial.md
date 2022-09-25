@@ -123,6 +123,8 @@ r=x+z; % output will be stored in ans
 x+z % will store the output in ans, printing it out to the terminal as well
 
 ``` 
+-Adding ints and strings
+    -
 -CODE EXAMPLE FOR SUBTRACTION 
 ``` cadence 
 z=5;
