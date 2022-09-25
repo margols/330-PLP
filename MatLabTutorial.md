@@ -66,6 +66,8 @@ Either format above will display Hello World in the Command Window
 
 
 #Data Types and Syntax
+-While C is statically typed, MATLAB is dynmically typed so you do not need to assign variables types before using them, the program will asgn the value of the variable automatically 
+-MATLAB is weakly typed 
 **Variables**
 Source: [MatLab Tutor on Variables](https://www.mathworks.com/help/matlab/matlab_prog/integers.html) 
 - Variables are stored in matlab using the following format: 
@@ -75,11 +77,23 @@ variable name = variable value;
 - By default MATLAB stores the numeric variabales at a Double which is a can be either a float or an integer 
 - The value of integers is stored in the workspace to the right of the workspace 
 -variables are case senstive x != X, recomened to not use the same variabales for different values as the programming can get confusing 
-- using ; hides the output from the terminal 
-- You do not need to assign variables types before using them, the program will asgn the value of the variable automatically 
+- using ; hides the output from the terminal
 ``` cadence 
 clear all ; % this will clear all of the variables  
 ``` 
+**Naming Conventions** 
+-When naming variabales in MATLAB it is recomened that
+    - variable names do not start with numbers, or _ or __ or reserved indefiers 
+    - For more information on reserved key words check out this 
+        - Link:[ MatLab Reserved Words]( https://www.mathworks.com/help/rtw/ug/reserved-keywords.html )
+     -Recomened naming convnetions:
+     Source: [Naming Conventions](https://www.mathworks.com/help/simulink/mdl_gd/hi/naming-considerations.html) 
+        - start name using: a-z, A-Z, 0-9, and the underscore (_).
+        - Use strings that are more than 2 and less than 64 characters. (Not including the dot and file extension). 
+        
+**Printing**
+- using disp vs fprinf
+    
 
 **Integers** 
 Source: [MatLab Integer Documentation](https://www.mathworks.com/help/matlab/matlab_prog/integers.html ) 
@@ -121,14 +135,83 @@ x+z % will store the output in ans, printing it out to the terminal as well
 ``` 
 -CODE EXAMPLE FOR MULTIPLICATION 
 ``` cadence 
-z=5;
-x=56; 
-r=x+z; % output will be stored in ans 
-%assigns the value of x +z to r 
-
-x+z % will store the output in ans, printing it out to the terminal as well
 
 ``` 
+
+-CODE EXAMPLE FOR Subtraction 
+``` cadence 
+
+```  
+
+**Strings** 
+- Text data is MATLAB is stored in either an array of characters or strings
+- Indexing is vital when adding strings in arrays, as MATLAB is matrix based 
+    - The character array stores the elements as an array of characters 
+  
+  ``` cadence 
+    c='MATLAB is Cool' 
+    disp(c) 
+    MATLAB is cool
+    ```  
+    - The string array stores text as data 
+    ``` cadence 
+    c="MATLAB is Cool" 
+    disp(c) 
+    MATLAB is cool
+    ``` 
+    ***Using Plus and Join ***
+    - Plus: Plus adds value to the elements in an array of strings
+     ``` cadence 
+    str = ["a", "b", "c"];  
+    C=str+2 
+      Output:  "a2"    "b2"    "c2"
+    ``` 
+     - If this is an array of ints, the value will be added to the value of the elements
+         ``` cadence 
+        str = [1, 2, 3];  
+        C=str+2 
+        Output:  
+             3     4     5
+        ```
+    - Adding two string together: 
+        ``` cadence 
+      str2=["cat", "dog"];
+      str3=["meow", "bark"];
+      str4=str3 +str2
+      Output: 
+            "meowcat"    "barkdog"
+        ```
+
+   - Join: Join is used to combine strings
+     ``` cadence
+        str1=["a", "b", "c"];  
+        newStr=join(str1,".")
+        Output:  
+             "a.b.c"
+        delimeters=["+","="]; 
+        newStr=join(str1,delimeters)
+        Output:
+              "a+b=c" 
+        
+        ```
+        
+ Reference for using strings: [STRINGS](https://www.mathworks.com/help/matlab/characters-and-strings.html) 
+ 
+**Float**
+- By default float variables are stored as Doubles as it is allows for the most percise computation 
+
+Source: [Double](https://www.mathworks.com/help/matlab/ref/double.html) 
+
+**Boolean**
+
+**Arrays and Lists**
+
+
+**Dictionary** 
+
+
+
+
 
 
 
