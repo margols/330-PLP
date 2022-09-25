@@ -43,6 +43,7 @@ When downloading MatLab from Mathworks, follow the instructions prompted through
 MatLab comes with a programming enviornment so there is no need to download an external programming environment. 
 
 ### Writing Comments in MatLab
+-Everything in MatLab is stored in a matrix
 - The symbol % can be used to comment in MatLab
 ``` cadence 
 %this is how you write a comment
@@ -62,6 +63,81 @@ Source: [MATLAB Function Reference](http://www.ece.northwestern.edu/local-apps/m
 Either format above will display Hello World in the Command Window
 
 <img width="699" alt="Screen Shot 2022-09-15 at 6 04 07 PM" src="https://user-images.githubusercontent.com/113360762/190516860-8ae44f88-3fb1-47c4-8e5f-1ddf81d459ae.png">
+
+
+#Data Types and Syntax
+**Variables**
+Source: [MatLab Tutor on Variables](https://www.mathworks.com/help/matlab/matlab_prog/integers.html) 
+- Variables are stored in matlab using the following format: 
+``` cadence 
+variable name = variable value; 
+``` 
+- By default MATLAB stores the numeric variabales at a Double which is a can be either a float or an integer 
+- The value of integers is stored in the workspace to the right of the workspace 
+-variables are case senstive x != X, recomened to not use the same variabales for different values as the programming can get confusing 
+- using ; hides the output from the terminal 
+- You do not need to assign variables types before using them, the program will asgn the value of the variable automatically 
+``` cadence 
+clear all ; % this will clear all of the variables  
+``` 
+
+**Integers** 
+Source: [MatLab Integer Documentation](https://www.mathworks.com/help/matlab/matlab_prog/integers.html ) 
+- Integers are stored in MatLab using the following format:
+``` cadence 
+y=int8(34); %different int notion is used depending on the number being stored 
+disp(y)
+
+%converting a value to an int
+x=45.67
+int16(x) 
+ans = 46 
+% when using the integers fucntion will round the value to the closest integer, if number=0.5 will round to the largest absosulte value 
+``` 
+-The integer format can be altered depending on the number of bits, refer to the table below for the notion: 
+<img width="1117" alt="Screen Shot 2022-09-25 at 10 43 33 AM" src="https://user-images.githubusercontent.com/113360762/192149697-8227ec1a-033a-41dd-9d23-91b998035078.png">
+
+***Adding, Substracting, Multplying and Dividing Integers*** 
+- You can add integers in matlab without assinging them as integers 
+- CODE EXAMPLE FOR Addition : 
+``` cadence 
+z=5;
+x=56; 
+r=x+z; % output will be stored in ans 
+%assigns the value of x +z to r 
+
+x+z % will store the output in ans, printing it out to the terminal as well
+
+``` 
+-CODE EXAMPLE FOR SUBTRACTION 
+``` cadence 
+z=5;
+x=56; 
+r=x-z; % output will be stored in ans 
+%assigns the value of x - z to r 
+
+x+z % will store the output in ans, printing it out to the terminal as well
+
+``` 
+-CODE EXAMPLE FOR MULTIPLICATION 
+``` cadence 
+z=5;
+x=56; 
+r=x+z; % output will be stored in ans 
+%assigns the value of x +z to r 
+
+x+z % will store the output in ans, printing it out to the terminal as well
+
+``` 
+
+
+
+
+
+
+
+
+
 
 
 
