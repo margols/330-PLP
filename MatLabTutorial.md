@@ -64,40 +64,52 @@ Either format above will display Hello World in the Command Window
 
 <img width="699" alt="Screen Shot 2022-09-15 at 6 04 07 PM" src="https://user-images.githubusercontent.com/113360762/190516860-8ae44f88-3fb1-47c4-8e5f-1ddf81d459ae.png">
 
+-----------------------------------------------------------------------------------------------
 
 #Data Types and Syntax
--While C is statically typed, MATLAB is dynmically typed so you do not need to assign variables types before using them, the program will asgn the value of the variable automatically 
--MATLAB is weakly typed 
-**Variables**
+Source:[](https://www.educative.io/answers/statically-v-dynamically-v-strongly-v-weakly-typed-languages)
+
+-While C is statically typed, MATLAB is dynmically typed so you do not need to assign variables types before using them, the program will assign the type of the variable automatically 
+-MATLAB is weakly typed which means conversions between unrealted types is made implictly 
+
+
+
+##Variables
+
 Source: [MatLab Tutor on Variables](https://www.mathworks.com/help/matlab/matlab_prog/integers.html) 
-- Variables are stored in matlab using the following format: 
+
+- Variables are stored in MATLAB using the following format: 
 ``` cadence 
 variable name = variable value; 
 ``` 
-- By default MATLAB stores the numeric variabales at a Double which is a can be either a float or an integer 
+- By default MATLAB stores the numeric variabales as a Double type, which can be either a float or an integer 
 - The value of integers is stored in the workspace to the right of the workspace 
--variables are case senstive x != X, recomened to not use the same variabales for different values as the programming can get confusing 
+<img width="309" alt="Screen Shot 2022-09-25 at 7 48 29 PM" src="https://user-images.githubusercontent.com/113360762/192171097-67f83529-409a-4381-95f7-867ab205319b.png">
+
+-variables are case senstive x != X, it is recommended to not use the same variabales for different values as the programming can get confusing 
 - using ; hides the output from the terminal
 ``` cadence 
 clear all ; % this will clear all of the variables  
 ``` 
 **Naming Conventions** 
--When naming variabales in MATLAB it is recomened that
+-When naming variabales in MATLAB it is recommended that:
     - variable names do not start with numbers, or _ or __ or reserved indefiers 
     - For more information on reserved key words check out this 
-        - Link:[ MatLab Reserved Words]( https://www.mathworks.com/help/rtw/ug/reserved-keywords.html )
-     -Recomened naming convnetions:
+        - [ MatLab Reserved Words]( https://www.mathworks.com/help/rtw/ug/reserved-keywords.html )
+     -recommendations for naming convnetions:
      Source: [Naming Conventions](https://www.mathworks.com/help/simulink/mdl_gd/hi/naming-considerations.html) 
         - start name using: a-z, A-Z, 0-9, and the underscore (_).
         - Use strings that are more than 2 and less than 64 characters. (Not including the dot and file extension). 
         
-**Printing**
-- using disp vs fprinf
+**Printing Variables**
+- using disp() vs fprinf
+- When using fprintf C formating is required 
+- disp() will output the the value in the ()
     
 
 **Integers** 
 Source: [MatLab Integer Documentation](https://www.mathworks.com/help/matlab/matlab_prog/integers.html ) 
-- Integers are stored in MatLab using the following format:
+- Integers are stored in MATLAB using the following format:
 ``` cadence 
 y=int8(34); %different int notion is used depending on the number being stored 
 disp(y)
@@ -111,9 +123,9 @@ ans = 46
 -The integer format can be altered depending on the number of bits, refer to the table below for the notion: 
 <img width="1117" alt="Screen Shot 2022-09-25 at 10 43 33 AM" src="https://user-images.githubusercontent.com/113360762/192149697-8227ec1a-033a-41dd-9d23-91b998035078.png">
 
-***Adding, Substracting, Multplying and Dividing Integers*** 
-- You can add integers in matlab without assinging them as integers 
-- CODE EXAMPLE FOR Addition : 
+***Adding, Substracting, Multplying and Dividing Integers***
+- You can add integers in MATLAB without assinging them as integers 
+- CODE EXAMPLE FOR ADDITION: 
 ``` cadence 
 z=5;
 x=56; 
@@ -124,7 +136,12 @@ x+z % will store the output in ans, printing it out to the terminal as well
 
 ``` 
 -Adding ints and strings
-    -
+    - When adding strings an ints, the output is converted to a string
+    ```cadence
+    f="5" + 6 ; 
+    disp(f)
+    Output: "56" ```
+        
 -CODE EXAMPLE FOR SUBTRACTION 
 ``` cadence 
 z=5;
@@ -135,15 +152,23 @@ r=x-z; % output will be stored in ans
 x+z % will store the output in ans, printing it out to the terminal as well
 
 ``` 
--CODE EXAMPLE FOR MULTIPLICATION 
+-CODE EXAMPLE FOR MULTIPLICATION and DIVISION 
+
 ``` cadence 
+%Multiplication 
+x=56.9
+z=5.57
+
+z*x
+Output:
+    254.3819
+%Division 
+%need to define variable as integer 
+num1=int16(67)
+num2=int16(5)
+idivide(num1,num2) %rounds to the closest integer 
 
 ``` 
-
--CODE EXAMPLE FOR Subtraction 
-``` cadence 
-
-```  
 
 **Strings** 
 - Text data is MATLAB is stored in either an array of characters or strings
@@ -201,7 +226,7 @@ x+z % will store the output in ans, printing it out to the terminal as well
  
 **Float**
 - By default float variables are stored as Doubles as it is allows for the most percise computation 
-
+- See Interger arithmic for additon, subtraction, multiplication and division on floats and integers 
 Source: [Double](https://www.mathworks.com/help/matlab/ref/double.html) 
 
 **Boolean**
@@ -243,7 +268,7 @@ Output:
      1     9     8
 
 
-%indexing arrays
+#indexing arrays
 
 A(2,3) %access the 2 row, and the third element 
 Output: 7
