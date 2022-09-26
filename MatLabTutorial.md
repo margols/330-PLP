@@ -278,7 +278,7 @@ Cell Arrays: Can hold multiple different variable types
         - cellA={}
 EXAMPLE:
 ```cadence
-%Cell arrays:
+#Cell arrays:
 cellA= {67, 8.90, "cells"}; 
 disp(cellA)
 ```
