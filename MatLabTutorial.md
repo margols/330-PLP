@@ -68,9 +68,10 @@ Either format above will display Hello World in the Command Window
 
 #Data Types and Syntax
 Source:[](https://www.educative.io/answers/statically-v-dynamically-v-strongly-v-weakly-typed-languages)
+Refer to DataTypes.m 
 
--While C is statically typed, MATLAB is dynmically typed so you do not need to assign variables types before using them, the program will assign the type of the variable automatically 
--MATLAB is weakly typed which means conversions between unrealted types is made implictly 
+- While C is statically typed, MATLAB is dynmically typed so you do not need to assign variables types before using them, the program will assign the type of the variable automatically 
+- MATLAB is weakly typed which means conversions between unrealted types is made implictly 
 - MATLAB is felxible with arithmitic between variabales types and it is up to the user to format the ouptut in the disired type
 - The limitations to the variables are in the division of different variabales and 
 
