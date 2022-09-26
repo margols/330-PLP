@@ -236,12 +236,13 @@ idivide(num1,num2) %rounds to the closest integer
 Source: [Double](https://www.mathworks.com/help/matlab/ref/double.html) 
 
 **Boolean**
+
 Source: [Using Boolean in MatLab](https://www.educba.com/matlab-boolean/) 
 - Boolean values of are stored as 0 and 1 with 0=False and 1=True:
 - EXAMPLE CODE:
         - Using Boolean in And statements:
         - Program determines if there is a 0 in the variables: 
-            ``` cadence
+ ``` cadence
         x=45.6700
         y=34
         r=0 
@@ -249,8 +250,7 @@ Source: [Using Boolean in MatLab](https://www.educba.com/matlab-boolean/)
             disp("both values are not zero") 
         else:
             disp("the values are zero") 
-        end 
-        
+        end
         if (x&& r)
             disp("both numbers are not zero")
         else
