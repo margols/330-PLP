@@ -71,6 +71,8 @@ Source:[](https://www.educative.io/answers/statically-v-dynamically-v-strongly-v
 
 -While C is statically typed, MATLAB is dynmically typed so you do not need to assign variables types before using them, the program will assign the type of the variable automatically 
 -MATLAB is weakly typed which means conversions between unrealted types is made implictly 
+- MATLAB is felxible with arithmitic between variabales types and it is up to the user to format the ouptut in the disired type
+- The limitations to the variables are in the division of different variabales and 
 
 
 
@@ -87,6 +89,7 @@ variable name = variable value;
 <img width="309" alt="Screen Shot 2022-09-25 at 7 48 29 PM" src="https://user-images.githubusercontent.com/113360762/192171097-67f83529-409a-4381-95f7-867ab205319b.png">
 
 -variables are case senstive x != X, it is recommended to not use the same variabales for different values as the programming can get confusing 
+-You must declare a variable before using it, typically variabales are defined first 
 - using ; hides the output from the terminal
 ``` cadence 
 clear all ; % this will clear all of the variables  
@@ -114,13 +117,13 @@ Source: [MatLab Integer Documentation](https://www.mathworks.com/help/matlab/mat
 y=int8(34); %different int notion is used depending on the number being stored 
 disp(y)
 
-%converting a value to an int
+Converting a value to an int:
 x=45.67
 int16(x) 
 ans = 46 
-% when using the integers fucntion will round the value to the closest integer, if number=0.5 will round to the largest absosulte value 
+When using the integers fucntion will round the value to the closest integer, if number=0.5 will round to the largest absosulte value 
 ``` 
--The integer format can be altered depending on the number of bits, refer to the table below for the notion: 
+-The integer format can be altered depending on the number of bits, refer to the table below for the notation: 
 <img width="1117" alt="Screen Shot 2022-09-25 at 10 43 33 AM" src="https://user-images.githubusercontent.com/113360762/192149697-8227ec1a-033a-41dd-9d23-91b998035078.png">
 
 ***Adding, Substracting, Multplying and Dividing Integers***
@@ -132,7 +135,8 @@ x=56;
 r=x+z; % output will be stored in ans 
 %assigns the value of x +z to r 
 
-x+z % will store the output in ans, printing it out to the terminal as well
+x+z 
+Will store the output in ans, printing it out to the terminal as well
 
 ``` 
 -Adding ints and strings
@@ -146,24 +150,25 @@ x+z % will store the output in ans, printing it out to the terminal as well
 ``` cadence 
 z=5;
 x=56; 
-r=x-z; % output will be stored in ans 
-%assigns the value of x - z to r 
+r=x-z; Output will be stored in ans 
+Assigns the value of x - z to r 
 
-x+z % will store the output in ans, printing it out to the terminal as well
+x+z  #Will store the output in ans, printing it out to the terminal as well
 
 ``` 
 -CODE EXAMPLE FOR MULTIPLICATION and DIVISION 
 
 ``` cadence 
-%Multiplication 
+Multiplication 
 x=56.9
 z=5.57
 
 z*x
 Output:
     254.3819
-%Division 
-%need to define variable as integer 
+    
+Division 
+Need to define variable as integer, as both variables must be the same type
 num1=int16(67)
 num2=int16(5)
 idivide(num1,num2) %rounds to the closest integer 
@@ -266,13 +271,27 @@ Output:
      5     6     7
      8     7     9
      1     9     8
-
-
+Addtion with arrays: Will add 10 to each element in the array 
+A +10 
+disp(A)
+Output: 
+    11    12    13
+    15    16    17
+    18    17    19
+    11    19    18
+#Multplication of Arrays 
+A*2 
+Output: Multplies every element in the array by 2 
+    2     4     6
+    10    12    14
+    16    14    18
+     2    18    16
 #indexing arrays
 
-A(2,3) %access the 2 row, and the third element 
+A(2,3) #Access the 2 row, and the third element 
 Output: 7
 ```
+
 Cell Arrays: Can hold multiple different variable types
 - Empty cell arrays can be created by setting the variable equal to {}
         - cellA={}
@@ -283,7 +302,8 @@ cellA= {67, 8.90, "cells"};
 disp(cellA)
 ```
 **Dictionary** 
-Due to the matrix structure of MatLab, a Map object is used to link values with corresponding keys
+Source:[](https://www.mathworks.com/help/matlab/map-containers.html)
+Due to the matrix structure of MATLAB, a Map object is used to link values with corresponding keys
 
 ```
 cadence 
