@@ -348,13 +348,14 @@ for i = 1:100
     else 
         disp(i);
     end 
-end ```
+end 
+```
 
 **Switch**
 Switch tests the input with the case, if the input does not match a case the otherwise statment is executed 
 If the case is true it will execute 
 Source:[](https://www.mathworks.com/help/matlab/ref/switch.html)
-```cadence 
+``` cadence 
 num=  input('Enter a number from 1 to 5: '); 
 switch num
     case 1
@@ -370,11 +371,13 @@ switch num
    
     otherwise
         disp(num + "Your input does not fit the parameters")
-end ``` 
+end 
+``` 
 
 
 **Booleans**
 - The logical datatype is used for Booleans, with true=1 and false =0 
+**Short Ciructing** 
 
 
 
