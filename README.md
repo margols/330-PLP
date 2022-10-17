@@ -319,10 +319,62 @@ M('dog') %output 12
 
 --------------------------------------------------------------------------------------------------------
 
+# Selection and Condtionals 
+**Condtional Statements**
+
+- code blocks are deliminated using ; at the end of if statments, see code example below 
+- if/ else statements
+Syntax:
+    if expression
+    statements
+elseif expression
+    statements
+else
+    statements
+end 
+
+If the expression is true the statement will execute 
+
+**if, elseif, else Example**
+This program interates through a loop from 1 to 100 and if 3 and 5 divide the number it prints Fizzbuzz, if the number is only divsisble by 3 prints Fizz and only 5 prints buzz
+```cadence 
+for i = 1:100 
+    if mod(i,3)==0 && mod(i,5)==0
+        disp('FizzBuzz');
+    elseif mod (i,3)==0
+        disp('Fizz')
+    elseif mod(i,5)==0
+        disp('Buzz'); 
+    else 
+        disp(i);
+    end 
+end ```
+
+**Switch**
+Switch tests the input with the case, if the input does not match a case the otherwise statment is executed 
+If the case is true it will execute 
+Source:[](https://www.mathworks.com/help/matlab/ref/switch.html)
+```cadence 
+num=  input('Enter a number from 1 to 5: '); 
+switch num
+    case 1
+        disp('1')
+    case 2
+        disp('two')
+    case 3
+        disp('three')
+    case 4
+        disp('four')
+    case 5
+        disp('five')
+   
+    otherwise
+        disp(num + "Your input does not fit the parameters")
+end ``` 
 
 
-
-
+**Booleans**
+- The logical datatype is used for Booleans, with true=1 and false =0 
 
 
 
