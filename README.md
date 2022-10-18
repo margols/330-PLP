@@ -320,6 +320,7 @@ M('dog') %output 12
 --------------------------------------------------------------------------------------------------------
 
 # Selection and Condtionals 
+- See condtionals.m and operatorDemo.m 
 **Condtional Statements**
 
 - code blocks are deliminated using ; at the end of if statments, see code example below 
@@ -461,6 +462,10 @@ disp(c|| a) %prints 1
 disp (a || b )%prints 1 
 disp (c || e )%prints 0  
 ``` 
+
+
+
+--------------------------------------------------------------------------------------------------------
 
 
 
