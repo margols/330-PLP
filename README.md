@@ -384,6 +384,7 @@ end
 Source:[Booleans](https://www.mathworks.com/help/matlab/ref/true.html) 
 
 Boolean Example: 
+
 ``` cadence 
 % adapted from 2008 Barry Burd
    %OperatorEvalDemo
@@ -445,7 +446,9 @@ true | false is true
 
 **Short Ciructing** 
 - Short circut and && and short circut or || are used in MATLAB to promote short circuting with logcial operators
+
 Short Circudting Example:
+
 ``` cadence
 
 %short circut and 
