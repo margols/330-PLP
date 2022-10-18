@@ -354,6 +354,8 @@ end
 **Switch**
 Switch tests the input with the case, if the input does not match a case the otherwise statment is executed 
 If the case is true it will execute 
+- Break is not commonly used in MatLab instead using an end will stop the excution 
+Source:[](https://www.mathworks.com/matlabcentral/answers/5718-use-of-break-in-switch-statement) 
 Source:[](https://www.mathworks.com/help/matlab/ref/switch.html)
 ``` cadence 
 num=  input('Enter a number from 1 to 5: '); 
@@ -377,7 +379,82 @@ end
 
 **Booleans**
 - The logical datatype is used for Booleans, with true=1 and false =0 
+- Source:[](https://www.mathworks.com/help/matlab/ref/true.html) 
+Boolean Example
+``` cadence 
+% adapted from 2008 Barry Burd
+   %OperatorEvalDemo
+      if 0 == 1 && 2 + 2 == 4 
+        disp("(0 == 1 && 2 + 2 == 4) is true");
+       else 
+         disp("(0 == 1 && 2 + 2 == 4) is false");
+      
+      end 
+
+   
+      if (2 + 2 == 4 || 0 == 1) 
+        disp("(2 + 2 == 4 || 0 == 1) is true");
+      else 
+         disp("(2 + 2 == 4 || 0 == 1) is false");
+      end 
+   
+        
+      if false && true
+      
+         disp("false && true is true");
+       else 
+         disp("false && true is false");
+      end 
+   
+      
+      if false & true 
+         disp("false & true is true");
+      else 
+         disp("false & true is false");
+      end 
+   
+
+      if true || false 
+         disp("true || false is true");
+       else 
+        disp("true || false is false");
+      end 
+   
+
+   
+      if true | false 
+         disp("true | false is true");
+       else 
+         disp("true | false is false");
+      end 
+ ``` 
+ 
+ Output:
+ ```
+(0 == 1 && 2 + 2 == 4) is false
+(2 + 2 == 4 || 0 == 1) is true
+false && true is false
+false & true is false
+true || false is true
+true | false is true
+```
+
+
 **Short Ciructing** 
+- Short circut and && and short circut or || are used in MATLAB to promote short circuting with logcial operators
+Short Circudting Example:
+``` cadence
+
+%short circut and 
+disp(a &&b) %prints 1 
+disp(a &&c) %prints 0
+disp((c&&a)) % short cicuring and 
+
+%short circuting or 
+disp(c|| a) %prints 1 
+disp (a || b )%prints 1 
+disp (c || e )%prints 0  
+``` 
 
 
 
