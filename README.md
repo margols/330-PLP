@@ -68,7 +68,7 @@ Either format above will display Hello World in the Command Window
 
 -----------------------------------------------------------------------------------------------
 
-#Data Types and Syntax
+# Data Types and Syntax
 Source:[](https://www.educative.io/answers/statically-v-dynamically-v-strongly-v-weakly-typed-languages)
 Refer to DataTypes.m 
 
@@ -79,7 +79,7 @@ Refer to DataTypes.m
 
 
 
-##Variables
+## Variables
 
 Source: [MatLab Tutor on Variables](https://www.mathworks.com/help/matlab/matlab_prog/integers.html) 
 
@@ -91,7 +91,7 @@ variable name = variable value;
 - The value of integers is stored in the workspace to the right of the workspace 
 <img width="309" alt="Screen Shot 2022-09-25 at 7 48 29 PM" src="https://user-images.githubusercontent.com/113360762/192171097-67f83529-409a-4381-95f7-867ab205319b.png">
 
--variables are case senstive x != X, it is recommended to not use the same variabales for different values as the programming can get confusing 
+- variables are case senstive x != X, it is recommended to not use the same variabales for different values as the programming can get confusing 
 -You must declare a variable before using it, typically variabales are defined first 
 - using ; hides the output from the terminal
 ``` cadence 
@@ -126,7 +126,7 @@ int16(x)
 ans = 46 
 When using the integers fucntion will round the value to the closest integer, if number=0.5 will round to the largest absosulte value 
 ``` 
--The integer format can be altered depending on the number of bits, refer to the table below for the notation: 
+- The integer format can be altered depending on the number of bits, refer to the table below for the notation: 
 <img width="1117" alt="Screen Shot 2022-09-25 at 10 43 33 AM" src="https://user-images.githubusercontent.com/113360762/192149697-8227ec1a-033a-41dd-9d23-91b998035078.png">
 
 ***Adding, Substracting, Multplying and Dividing Integers***
@@ -142,14 +142,14 @@ x+z
 Will store the output in ans, printing it out to the terminal as well
 
 ``` 
--Adding ints and strings
+- Adding ints and strings
     - When adding strings an ints, the output is converted to a string
     ```cadence
     f="5" + 6 ; 
     disp(f)
     Output: "56" ```
         
--CODE EXAMPLE FOR SUBTRACTION 
+- CODE EXAMPLE FOR SUBTRACTION 
 ``` cadence 
 z=5;
 x=56; 
@@ -159,7 +159,7 @@ Assigns the value of x - z to r
 x+z  #Will store the output in ans, printing it out to the terminal as well
 
 ``` 
--CODE EXAMPLE FOR MULTIPLICATION and DIVISION 
+- CODE EXAMPLE FOR MULTIPLICATION and DIVISION 
 
 ``` cadence 
 Multiplication 
@@ -194,7 +194,7 @@ idivide(num1,num2) %rounds to the closest integer
     disp(c) 
     MATLAB is cool
     ``` 
-    ***Using Plus and Join ***
+    ***Using Plus and Join***
     - Plus: Plus adds value to the elements in an array of strings
      ``` cadence 
     str = ["a", "b", "c"];  
@@ -325,6 +325,7 @@ M('dog') %output 12
 - code blocks are deliminated using ; at the end of if statments, see code example below 
 - if/ else statements
 Syntax:
+```
     if expression
     statements
 elseif expression
@@ -332,6 +333,7 @@ elseif expression
 else
     statements
 end 
+```
 
 If the expression is true the statement will execute 
 
@@ -379,8 +381,9 @@ end
 
 **Booleans**
 - The logical datatype is used for Booleans, with true=1 and false =0 
-- Source:[](https://www.mathworks.com/help/matlab/ref/true.html) 
-Boolean Example
+Source:[Booleans](https://www.mathworks.com/help/matlab/ref/true.html) 
+
+Boolean Example: 
 ``` cadence 
 % adapted from 2008 Barry Burd
    %OperatorEvalDemo
