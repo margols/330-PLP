@@ -529,3 +529,36 @@ end
 Break can be used to exist a loop and continue can be used to skip the next interation of a loop 
 Source: https://www.mathworks.com/help/matlab/matlab_prog/loop-control-statements.html 
 
+break example:
+In this example the first odd number will be printed and when x is odd the loop will end 
+```cadence 
+%break 
+for x=0:10
+    if mod(x,2)==0
+        disp(x)
+    else
+        break
+```
+
+
+continue example:
+In this example the code will only print even numbers and continue if x is not even 
+
+```cadence
+%continue 
+for x=0:10
+    if mod(x,2)==0
+        disp(x)
+    else
+        continue 
+
+
+    end 
+end 
+``` 
+
+
+
+
+  
+
