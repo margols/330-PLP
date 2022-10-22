@@ -466,6 +466,66 @@ disp (c || e )%prints 0
 
 
 --------------------------------------------------------------------------------------------------------
+# Loops and Functions 
+
+**While Loops** 
+Syntax:
+while expression
+    statements
+end
+Source:https://www.mathworks.com/help/matlab/ref/while.html 
+Example: 
+
+Program prints number x while x does not equal 10 
+
+```cadence
+x= 0;  %loop control variable 
+while(x~=10)
+    disp(x)
+    x=x+1;  %each time goes through the loop increment by 1 
+end
+``` 
+
+**For loops**
+Syntax:
+for index = values
+   statements
+end 
+
+***Nested For Loops***
+for index = values
+    for index=values
+         statements
+     end 
+end 
+Source:https://www.tutorialspoint.com/matlab/matlab_nested_loops.htm 
 
 
+
+Example: Code print 0 through 10 
+
+```cadence
+for x=0:10
+    disp(x)
+end 
+ ``` 
+Example of a nested for Loop:
+Program prints the even numbers from 1-10 and prints Odd Number for the odd numbers
+    - Note that each for loop must close with an "end" 
+```cadence
+for x=0:10
+    for b=mod(x,2)
+        if b==0
+            disp(x)
+        else
+            disp("Odd Number")
+
+        end 
+    end 
+end
+``` 
+
+**Break and Contintue**
+Break can be used to exist a loop and continue can be used to skip the next interation of a loop 
+Source: https://www.mathworks.com/help/matlab/matlab_prog/loop-control-statements.html 
 
