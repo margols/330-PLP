@@ -566,9 +566,132 @@ end
 source for using radnom:https://www.mathworks.com/help/matlab/ref/rand.html 
 
 # Functions 
+- Syntax for declaring functions
+- Functions can accpet multiple input and output, variables must be created to catch teh returned values
+```
+Function with multiple output: 
+ function [output variable1,output variable2] = func(input variable1, variable2)
+ 
+ Function with one output value:
+  function (output variable) = func(input variables)
+  ```
+- Syntax for wiritng functions:
+- This program takes the sum of the elements in the array z 
+- adapated from https://www.mathworks.com/help/matlab/ref/function.html 
+```cadence 
+%fucntions 
+z=[1,2,5,7]; 
+sum1 = calculateSum(z); 
+disp(sum1)
+
+
+function sum1 = calculateSum(x)
+    sum1 = sum(x(:)); 
+end
+
+```
+
+- Functions must be placed at the end of a file, or in a serpate file in which the file name must match the name of the first fucntion 
+**Recursive Functions** 
+Code adapated from: https://www.programiz.com/python-programming/recursion 
+```cadence
+
+n=randi([1 10 ]); %generates a random number between 1 and 10
+nums = mynum(n); %calls the function 
+disp("The factorial of "+ n + " is")
+disp(nums)
+
+
+function nums = mynum(n) %input is an int 
+   if n==1  %checks if 1 bc factiorial of 1 is 1 
+    nums=n;
+   else
+     nums = n* mynum(n-1);  %call the function again to generate the factorial of n 
+   end
+ end
+``` 
+Output:
+The factorial of 3 is
+     6
+- MatLab Passes arguments by value becuase it allows the programmer to change the value of variables without modifiying teh caller's workspace
+- This avoiding copies of inputs inside the function as only the outputs are modifed 
+Source: https://www.mathworks.com/help/matlab/matlab_prog/avoid-unnecessary-copies-of-data.html 
+    https://www.youtube.com/watch?v=hNR6fsksEu8 
+    
+**Data Storage**
+
+    <img width="350" alt="Screen Shot 2022-10-23 at 5 05 17 PM" src="https://user-images.githubusercontent.com/113360762/197418246-ca123b99-8cba-4bf1-852f-84a687e3e693.png">
 
 
 
-
+**Memory Storage**
+MatLab Workplace Storage:
+    - variables created on the command line are stored in the base workspace until they are cleared or the session is closed 
+    - Every function has its own function workspace 
+        - local variables (those that are specific to a function) typically do not remain in moving from one function to the next 
+    - Nested function also have their own workspace with the addtion of the feature that nested funciton can modifiy variables in the workspaces of the functiom containing them 
+    Source: https://www.mathworks.com/help/matlab/matlab_prog/base-and-function-workspaces.html 
+   
+**Scoop Variables**
+    <img width="621" alt="Screen Shot 2022-10-23 at 5 49 58 PM" src="https://user-images.githubusercontent.com/113360762/197419863-b969861c-a406-4450-8025-d282aa5fa34a.png">
+    
+ Persistent Variables:
+ - Persistent variabales are local to the function they are declared in and remain in memeory between fucntion calls
+ Syntax: 
+    persistent variableName
+  Example:
+  ```cadence
+  function myFun()
+    persistent n
+    if isempty(n)
+        n = 2;
+    end
+    n = n*2
+end
+```
+-After calling myFun in the command prompt the output is:
+    - n=2 
+    - n=4 
+    - n=8 
+  Code adapted from: https://www.mathworks.com/help/matlab/ref/persistent.html 
   
+ Assignin Variables:
+ Assign in assigns the value of a variable in the base workspace 
+ Syntax:
+    assignin(ws,var,val) 
+ where ws is workspace, var is the variable name and val is the value of the variable
+ 
+ Global Variables:
+ Variables that are declared within function are typical local to each function, however global variables are shared between fucntion and any change to the variables is impacted in all the fucntions it is present in 
+ 
+Syntax:
+    global variablename 
+Example:
+This program set and returns the value of a global variable where the value is a random number between 10 ans 20 
+adapted from: https://www.mathworks.com/help/matlab/ref/global.html 
+```cadence 
+setGlobalx(randi([10 20]))
+r = getGlobalx  
+
+
+function setGlobalx(val)
+global x
+x = val;
+end 
+
+function r = getGlobalx
+global x
+r = x;
+end  
+
+```
+
+
+
+    
+ 
+    
+    
+  
+
 
