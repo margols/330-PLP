@@ -533,29 +533,39 @@ break example:
 In this example the first odd number will be printed and when x is odd the loop will end 
 ```cadence 
 %break 
-for x=0:10
-    if mod(x,2)==0
-        disp(x)
+for r = randi([10 50],1,100)  %chooses a random integer between 10 and 50, print 100 random integers 
+    %prints 100 random numbers 
+    if mod(r,2)==0  %if the number is even 
+        disp(r)  %print the number 
     else
-        break
+        disp("Num is odd " + r )  %if the number is odd the loop ends
+        break 
+
+    end 
+end 
 ```
 
 
 continue example:
-In this example the code will only print even numbers and continue if x is not even 
+In this example the code will print the odd numbers and disp this number is even, for 50 randomly generated numbers 
 
 ```cadence
 %continue 
-for x=0:10
-    if mod(x,2)==0
-        disp(x)
+for x = randi([10 50],1,50)  %chooses a random integer between 10 and 50
+    %prints 100 random numbers 
+    if mod(x,2)~=0  %if the number is odd 
+        disp(x)  %print the number 
     else
+        disp("Num is even " + x )  %if the number is even prints number
         continue 
-
 
     end 
 end 
 ``` 
+
+source for using radnom:https://www.mathworks.com/help/matlab/ref/rand.html 
+
+# Functions 
 
 
 
