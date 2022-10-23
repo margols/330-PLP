@@ -613,13 +613,15 @@ function nums = mynum(n) %input is an int
 Output:
 The factorial of 3 is
      6
-- MatLab Passes arguments by value becuase it allows the programmer to change the value of variables without modifiying teh caller's workspace
+ **Passing agruments by Value** 
+- MatLab Passes arguments by value becuase it allows the programmer to change the value of variables without modifiying the caller's workspace
 - This avoiding copies of inputs inside the function as only the outputs are modifed 
+- Handle classes act as if they are passed by reference 
 Source: https://www.mathworks.com/help/matlab/matlab_prog/avoid-unnecessary-copies-of-data.html 
     https://www.youtube.com/watch?v=hNR6fsksEu8 
     
 **Data Storage**
-
+- MatLab stores data column wise starting from the first column 
 <img width="350" alt="Screen Shot 2022-10-23 at 5 05 17 PM" src="https://user-images.githubusercontent.com/113360762/197418246-ca123b99-8cba-4bf1-852f-84a687e3e693.png">
 
 
@@ -627,13 +629,14 @@ Source: https://www.mathworks.com/help/matlab/matlab_prog/avoid-unnecessary-copi
 **Memory Storage**
 MatLab Workplace Storage:
     - variables created on the command line are stored in the base workspace until they are cleared or the session is closed 
+    -All variabales are stroed as arrays given the matrix based structure of MATLAB
     - Every function has its own function workspace 
         - local variables (those that are specific to a function) typically do not remain in moving from one function to the next 
-    - Nested function also have their own workspace with the addtion of the feature that nested funciton can modifiy variables in the workspaces of the functiom containing them 
+    - Nested function also have their own workspace with the addtion of the feature that nested funciton can modifiy variables in the workspaces of the function containing them 
     Source: https://www.mathworks.com/help/matlab/matlab_prog/base-and-function-workspaces.html 
    
 **Scoop Variables**
-
+- Variables exsit in memory until they are cleared or the session ended, with the execpetion of perstiant and global variables  
 <img width="621" alt="Screen Shot 2022-10-23 at 5 49 58 PM" src="https://user-images.githubusercontent.com/113360762/197419863-b969861c-a406-4450-8025-d282aa5fa34a.png">
     
  Persistent Variables:
