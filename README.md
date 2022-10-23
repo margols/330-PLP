@@ -665,11 +665,14 @@ end
     assignin(ws,var,val) 
  where ws is workspace, var is the variable name and val is the value of the variable
  
+
  Global Variables:
- Variables that are declared within function are typical local to each function, however global variables are shared between fucntion and any change to the variables is impacted in all the fucntions it is present in 
+ 
+Variables that are declared within function are typical local to each function, however global variables are shared between fucntion and any change to the variables is impacted in all the fucntions it is present in 
  
 Syntax:
     global variablename 
+    
 Example:
 This program set and returns the value of a global variable where the value is a random number between 10 ans 20 
 adapted from: https://www.mathworks.com/help/matlab/ref/global.html 
