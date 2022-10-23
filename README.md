@@ -633,7 +633,8 @@ MatLab Workplace Storage:
     Source: https://www.mathworks.com/help/matlab/matlab_prog/base-and-function-workspaces.html 
    
 **Scoop Variables**
-    <img width="621" alt="Screen Shot 2022-10-23 at 5 49 58 PM" src="https://user-images.githubusercontent.com/113360762/197419863-b969861c-a406-4450-8025-d282aa5fa34a.png">
+
+<img width="621" alt="Screen Shot 2022-10-23 at 5 49 58 PM" src="https://user-images.githubusercontent.com/113360762/197419863-b969861c-a406-4450-8025-d282aa5fa34a.png">
     
  Persistent Variables:
  - Persistent variabales are local to the function they are declared in and remain in memeory between fucntion calls
