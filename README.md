@@ -620,7 +620,7 @@ Source: https://www.mathworks.com/help/matlab/matlab_prog/avoid-unnecessary-copi
     
 **Data Storage**
 
-    <img width="350" alt="Screen Shot 2022-10-23 at 5 05 17 PM" src="https://user-images.githubusercontent.com/113360762/197418246-ca123b99-8cba-4bf1-852f-84a687e3e693.png">
+<img width="350" alt="Screen Shot 2022-10-23 at 5 05 17 PM" src="https://user-images.githubusercontent.com/113360762/197418246-ca123b99-8cba-4bf1-852f-84a687e3e693.png">
 
 
 
