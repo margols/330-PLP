@@ -457,7 +457,7 @@ disp (c || e )%prints 0
 
 --------------------------------------------------------------------------------------------------------
 # Loops and Functions 
-
+Reference Loops.m
 **While Loops** 
 Syntax:
 while expression
@@ -516,6 +516,7 @@ end
 ``` 
 
 **Break and Contintue**
+Reference breakandcontinue.m
 Break can be used to exist a loop and continue can be used to skip the next interation of a loop[^1]
 
 Break example:
@@ -554,6 +555,7 @@ end
 
 
 # Functions 
+Reference Functions.m 
 - Syntax for declaring functions
 - Functions can accpet multiple input and output, variables must be created to catch the returned values[^1]
 ```
@@ -650,9 +652,9 @@ end
     assignin(ws,var,val) 
  where ws is workspace, var is the variable name and val is the value of the variable
  
+Global Variables:
+Reference myFun.m 
 
- Global Variables:
- 
 Variables that are declared within function are typical local to each function, however global variables are shared between fucntion and any change to the variables is impacted in all the fucntions it is present in 
  
 Syntax:
