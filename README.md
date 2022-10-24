@@ -10,7 +10,7 @@ This is a learning project for my Structure and Organization of Programming Lang
 - Mat Lab was started by Cleve Molar at the University of New Mexico to offer his students easier access to LINPACK and EISPACK without having to write Fortran programs.
 - MatLab is short for Matrix Laboratory and the program first written in Fortran. Originally there were only 71 reserved words and functions built in, as its main purpose was to be an interactive matrix calculator. 
 - In 1983, Jack Little and Steve Bangert wrote a new extended version of MATLAB in C, which included a host of new aspects some of which included functions, toolboxes and graphics.
-- In 1984 MatLab became a commercially available product which was proposed by Little and Bangert in 1983. 
+- In 1984 MatLab became a commercially available product which was proposed by Little and Bangert in 1983.[^1]
 
 **Modern MatLab:**
 
@@ -20,15 +20,12 @@ This is a learning project for my Structure and Organization of Programming Lang
 - Separate windows for graphics, editing and other tools were added in 2000 along with the MatLab desktop. 
 - In 2016 the live editor was introduced which combines descriptive text, input, output and graphics into one interactive document. 
 - Today MatLab is used in a wide range of fields, focusing on everything from deep and machine learning to computational finance and biology.
-- Some major companies using MatLab today are:
+- Some major companies using MatLab today are:[^3]
     - SpaceX, Intel, and General Atomics
-    - The most popular use of MatLab is in Information Technology, followed by higher education and computer software 
-Information was referenced from: 
-[Mathworks](https://www.mathworks.com/company/newsletters/articles/a-brief-history-of-matlab.html) 
-[HG Insights](https://discovery.hgdata.com/product/matlab)
-[enlyft](https://enlyft.com/tech/products/matlab)
+    - The most popular use of MatLab is in Information Technology, followed by higher education and computer software[^1]
+[
 
-##References for Getting Started 
+## References for Getting Started 
 MatLab Documentation: [Mathworks](https://www.mathworks.com/help/matlab/) 
 Available Reference Guide: [Amazon Link](https://www.amazon.com/Getting-Started-MATLAB-Introduction-Scientists/dp/0199731241) 
 Hello World Powerpoint from Berkeley: [Berkeley Slides](https://math.berkeley.edu/~ehallman/98-fa18/lectures/lectureNotes1.pdf) 
@@ -56,11 +53,11 @@ MatLab comes with a programming enviornment so there is no need to download an e
 
 ## Writing "Hello World"
 
-Using fprintf() statement outputs a formated string 
-Source: Hello World Powerpoint from Berkeley: [Berkeley Slides](https://math.berkeley.edu/~ehallman/98-fa18/lectures/lectureNotes1.pdf)  
+Using fprintf() statement outputs a formated string [^4]
 
-Using disp(x) displays the value in the variable x
-Source: [MATLAB Function Reference](http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/ref/display.html#:~:text=display%20(MATLAB%20Functions)&text=display(X)%20prints%20the%20value,sin(A)%3B%20does%20not.)  
+
+Using disp(x) displays the value in the variable x [^5] 
+
 
 Either format above will display Hello World in the Command Window
 
@@ -69,31 +66,29 @@ Either format above will display Hello World in the Command Window
 -----------------------------------------------------------------------------------------------
 
 # Data Types and Syntax
-Source:[](https://www.educative.io/answers/statically-v-dynamically-v-strongly-v-weakly-typed-languages)
 Refer to DataTypes.m 
 
 - While C is statically typed, MATLAB is dynmically typed so you do not need to assign variables types before using them, the program will assign the type of the variable automatically 
 - MATLAB is weakly typed which means conversions between unrealted types is made implictly 
 - MATLAB is felxible with arithmitic between variabales types and it is up to the user to format the ouptut in the disired type
-- The limitations to the variables are in the division of different variabales and 
+- The limitations to the variables are in the division of different variables [^6]
 
 
 
 ## Variables
-
-Source: [MatLab Tutor on Variables](https://www.mathworks.com/help/matlab/matlab_prog/integers.html) 
 
 - Variables are stored in MATLAB using the following format: 
 ``` cadence 
 variable name = variable value; 
 ``` 
 - By default MATLAB stores the numeric variabales as a Double type, which can be either a float or an integer 
-- The value of integers is stored in the workspace to the right of the workspace 
+- The value of integers is stored in the workspace to the right of the workspace[^1]
+
 <img width="309" alt="Screen Shot 2022-09-25 at 7 48 29 PM" src="https://user-images.githubusercontent.com/113360762/192171097-67f83529-409a-4381-95f7-867ab205319b.png">
 
-- variables are case senstive x != X, it is recommended to not use the same variabales for different values as the programming can get confusing 
+- Variables are case senstive x != X, it is recommended to not use the same variabales for different values as the programming can get confusing 
 -You must declare a variable before using it, typically variabales are defined first 
-- using ; hides the output from the terminal
+- Using ; hides the output from the terminal
 ``` cadence 
 clear all ; % this will clear all of the variables  
 ``` 
@@ -102,7 +97,7 @@ clear all ; % this will clear all of the variables
     - variable names do not start with numbers, or _ or __ or reserved indefiers 
     - For more information on reserved key words check out this 
         - [ MatLab Reserved Words]( https://www.mathworks.com/help/rtw/ug/reserved-keywords.html )
-     -recommendations for naming convnetions:
+     -Recommendations for naming convnetions:
      Source: [Naming Conventions](https://www.mathworks.com/help/simulink/mdl_gd/hi/naming-considerations.html) 
         - start name using: a-z, A-Z, 0-9, and the underscore (_).
         - Use strings that are more than 2 and less than 64 characters. (Not including the dot and file extension). 
@@ -114,8 +109,7 @@ clear all ; % this will clear all of the variables
     
 
 **Integers** 
-Source: [MatLab Integer Documentation](https://www.mathworks.com/help/matlab/matlab_prog/integers.html ) 
-- Integers are stored in MATLAB using the following format:
+- Integers are stored in MATLAB using the following format:[^1]
 ``` cadence 
 y=int8(34); %different int notion is used depending on the number being stored 
 disp(y)
@@ -230,17 +224,15 @@ idivide(num1,num2) %rounds to the closest integer
         
         ```
         
- Reference for using strings: [STRINGS](https://www.mathworks.com/help/matlab/characters-and-strings.html) 
+ Reference for using strings[^1]
  
 **Float**
 - By default float variables are stored as Doubles as it is allows for the most percise computation 
-- See Interger arithmic for additon, subtraction, multiplication and division on floats and integers 
-Source: [Double](https://www.mathworks.com/help/matlab/ref/double.html) 
+- See Interger arithmic for additon, subtraction, multiplication and division on floats and integers[^1]
 
 **Boolean**
 
-Source: [Using Boolean in MatLab](https://www.educba.com/matlab-boolean/) 
-- Boolean values of are stored as 0 and 1 with 0=False and 1=True:
+- Boolean values of are stored as 0 and 1 with 0=False and 1=True:[^7]
 - EXAMPLE CODE:
         - Using Boolean in And statements:
         - Program determines if there is a 0 in the variables: 
@@ -262,9 +254,8 @@ Source: [Using Boolean in MatLab](https://www.educba.com/matlab-boolean/)
         
 
 **Arrays**
-Source: [Arrays](https://www.mathworks.com/help/matlab/learn_matlab/array-indexing.html) 
 
-Arrays can be used to index specfic elements:
+Arrays can be used to index specfic elements[^1]:
 ``` cadence
 %Arrays
 A=[1 2 3; 5 6 7;8 7 9;1 9 8];
@@ -305,8 +296,8 @@ cellA= {67, 8.90, "cells"};
 disp(cellA)
 ```
 **Dictionary** 
-Source:[](https://www.mathworks.com/help/matlab/map-containers.html)
-Due to the matrix structure of MATLAB, a Map object is used to link values with corresponding keys
+
+Due to the matrix structure of MATLAB, a Map object is used to link values with corresponding keys[^1]
 
 ```cadence 
 key={'dog', 'cat'}; 
@@ -381,8 +372,7 @@ end
 
 
 **Booleans**
-- The logical datatype is used for Booleans, with true=1 and false =0 
-Source:[Booleans](https://www.mathworks.com/help/matlab/ref/true.html) 
+- The logical datatype is used for Booleans, with true=1 and false =0 [^1] 
 
 Boolean Example: 
 
@@ -473,8 +463,8 @@ Syntax:
 while expression
     statements
 end
-Source:https://www.mathworks.com/help/matlab/ref/while.html 
-Example: 
+
+Example[^1]: 
 
 Program prints number x while x does not equal 10 
 
@@ -492,13 +482,13 @@ for index = values
    statements
 end 
 
-***Nested For Loops***
+***Nested For Loops***[^1]
+
 for index = values
     for index=values
          statements
      end 
 end 
-Source:https://www.tutorialspoint.com/matlab/matlab_nested_loops.htm 
 
 
 
@@ -526,10 +516,9 @@ end
 ``` 
 
 **Break and Contintue**
-Break can be used to exist a loop and continue can be used to skip the next interation of a loop 
-Source: https://www.mathworks.com/help/matlab/matlab_prog/loop-control-statements.html 
+Break can be used to exist a loop and continue can be used to skip the next interation of a loop[^1]
 
-break example:
+Break example:
 In this example the first odd number will be printed and when x is odd the loop will end 
 ```cadence 
 %break 
@@ -546,8 +535,8 @@ end
 ```
 
 
-continue example:
-In this example the code will print the odd numbers and disp this number is even, for 50 randomly generated numbers 
+Continue example:
+In this example the code will print the odd numbers and disp this number is even, for 50 randomly generated numbers[^1] 
 
 ```cadence
 %continue 
@@ -563,11 +552,10 @@ for x = randi([10 50],1,50)  %chooses a random integer between 10 and 50
 end 
 ``` 
 
-source for using radnom:https://www.mathworks.com/help/matlab/ref/rand.html 
 
 # Functions 
 - Syntax for declaring functions
-- Functions can accpet multiple input and output, variables must be created to catch teh returned values
+- Functions can accpet multiple input and output, variables must be created to catch the returned values[^1]
 ```
 Function with multiple output: 
  function [output variable1,output variable2] = func(input variable1, variable2)
@@ -577,7 +565,7 @@ Function with multiple output:
   ```
 - Syntax for wiritng functions:
 - This program takes the sum of the elements in the array z 
-- adapated from https://www.mathworks.com/help/matlab/ref/function.html 
+- adapated from[^1]
 ```cadence 
 %fucntions 
 z=[1,2,5,7]; 
@@ -591,9 +579,9 @@ end
 
 ```
 
-- Functions must be placed at the end of a file, or in a serpate file in which the file name must match the name of the first fucntion 
+- Functions must be placed at the end of a file, or in a serpate file in which the file name must match the name of the first function 
 **Recursive Functions** 
-Code adapated from: https://www.programiz.com/python-programming/recursion 
+Code adapated from:[^8]
 ```cadence
 
 n=randi([1 10 ]); %generates a random number between 1 and 10
@@ -616,9 +604,7 @@ The factorial of 3 is
  **Passing agruments by Value** 
 - MatLab Passes arguments by value becuase it allows the programmer to change the value of variables without modifiying the caller's workspace
 - This avoiding copies of inputs inside the function as only the outputs are modifed 
-- Handle classes act as if they are passed by reference 
-Source: https://www.mathworks.com/help/matlab/matlab_prog/avoid-unnecessary-copies-of-data.html 
-    https://www.youtube.com/watch?v=hNR6fsksEu8 
+- Handle classes act as if they are passed by reference [^1] [^9] 
     
 **Data Storage**
 - MatLab stores data column wise starting from the first column 
@@ -632,8 +618,7 @@ MatLab Workplace Storage:
     -All variabales are stroed as arrays given the matrix based structure of MATLAB
     - Every function has its own function workspace 
         - local variables (those that are specific to a function) typically do not remain in moving from one function to the next 
-    - Nested function also have their own workspace with the addtion of the feature that nested funciton can modifiy variables in the workspaces of the function containing them 
-    Source: https://www.mathworks.com/help/matlab/matlab_prog/base-and-function-workspaces.html 
+    - Nested function also have their own workspace with the addtion of the feature that nested funciton can modifiy variables in the workspaces of the function containing them [^1]
    
 **Scoop Variables**
 - Variables exsit in memory until they are cleared or the session ended, with the execpetion of perstiant and global variables  
@@ -675,7 +660,7 @@ Syntax:
     
 Example:
 This program set and returns the value of a global variable where the value is a random number between 10 ans 20 
-adapted from: https://www.mathworks.com/help/matlab/ref/global.html 
+Adapted from: https://www.mathworks.com/help/matlab/ref/global.html 
 ```cadence 
 setGlobalx(randi([10 20]))
 r = getGlobalx  
@@ -692,6 +677,19 @@ r = x;
 end  
 
 ```
+
+
+--------------------------------------------------------------------------------------------------------
+References:
+[^1] [Mathworks Documentation](https://www.mathworks.com/company/newsletters/articles/a-brief-history-of-matlab.html)
+[^2][HG Insights](https://discovery.hgdata.com/product/matlab)
+[^3][enlyft](https://enlyft.com/tech/products/matlab) 
+[^4] [Berkeley Slides](https://math.berkeley.edu/~ehallman/98-fa18/lectures/lectureNotes1.pdf) 
+[^5] [MATLAB Function Reference](http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/ref/display.html#:~:text=display%20(MATLAB%20Functions)&text=display(X)%20prints%20the%20value,sin(A)%3B%20does%20not.)
+[^6](https://www.educative.io/answers/statically-v-dynamically-v-strongly-v-weakly-typed-languages) 
+[^7] [Using Boolean in MatLab](https://www.educba.com/matlab-boolean/)
+[^8][](https://www.programiz.com/python-programming/recursion)
+[^9][]( https://www.youtube.com/watch?v=hNR6fsksEu8 ) 
 
 
 
