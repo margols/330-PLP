@@ -688,8 +688,8 @@ References:
  [^5]: [MATLAB Function Reference](http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/ref/display.html#:~:text=display%20(MATLAB%20Functions)&text=display(X)%20prints%20the%20value,sin(A)%3B%20does%20not.)
  [^6]:(https://www.educative.io/answers/statically-v-dynamically-v-strongly-v-weakly-typed-languages) 
  [^7]: [Using Boolean in MatLab](https://www.educba.com/matlab-boolean/)
- [^8]:[](https://www.programiz.com/python-programming/recursion)
- [^9]: []( https://www.youtube.com/watch?v=hNR6fsksEu8 ) 
+ [^8]:(https://www.programiz.com/python-programming/recursion)
+ [^9]: ( https://www.youtube.com/watch?v=hNR6fsksEu8 ) 
 
 
 
