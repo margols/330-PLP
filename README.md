@@ -681,15 +681,15 @@ end
 
 --------------------------------------------------------------------------------------------------------
 References:
-[^1] [Mathworks Documentation](https://www.mathworks.com/company/newsletters/articles/a-brief-history-of-matlab.html)
-[^2][HG Insights](https://discovery.hgdata.com/product/matlab)
-[^3][enlyft](https://enlyft.com/tech/products/matlab) 
-[^4] [Berkeley Slides](https://math.berkeley.edu/~ehallman/98-fa18/lectures/lectureNotes1.pdf) 
-[^5] [MATLAB Function Reference](http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/ref/display.html#:~:text=display%20(MATLAB%20Functions)&text=display(X)%20prints%20the%20value,sin(A)%3B%20does%20not.)
-[^6](https://www.educative.io/answers/statically-v-dynamically-v-strongly-v-weakly-typed-languages) 
-[^7] [Using Boolean in MatLab](https://www.educba.com/matlab-boolean/)
-[^8][](https://www.programiz.com/python-programming/recursion)
-[^9][]( https://www.youtube.com/watch?v=hNR6fsksEu8 ) 
+1: [^1] [Mathworks Documentation](https://www.mathworks.com/company/newsletters/articles/a-brief-history-of-matlab.html)
+2: [^2][HG Insights](https://discovery.hgdata.com/product/matlab)
+3: [^3][enlyft](https://enlyft.com/tech/products/matlab) 
+4: [^4] [Berkeley Slides](https://math.berkeley.edu/~ehallman/98-fa18/lectures/lectureNotes1.pdf) 
+5: [^5] [MATLAB Function Reference](http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/ref/display.html#:~:text=display%20(MATLAB%20Functions)&text=display(X)%20prints%20the%20value,sin(A)%3B%20does%20not.)
+6: [^6](https://www.educative.io/answers/statically-v-dynamically-v-strongly-v-weakly-typed-languages) 
+7: [^7] [Using Boolean in MatLab](https://www.educba.com/matlab-boolean/)
+8: [^8][](https://www.programiz.com/python-programming/recursion)
+9: [^9][]( https://www.youtube.com/watch?v=hNR6fsksEu8 ) 
 
 
 
