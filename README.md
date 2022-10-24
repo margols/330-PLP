@@ -601,8 +601,8 @@ function nums = mynum(n) %input is an int
  end
 ``` 
 Output:
-The factorial of 3 is
-     6
+The factorial of 3 is 6
+
  **Passing agruments by Value** 
 - MatLab Passes arguments by value becuase it allows the programmer to change the value of variables without modifiying the caller's workspace
 - This avoiding copies of inputs inside the function as only the outputs are modifed 
@@ -615,6 +615,7 @@ The factorial of 3 is
 
 
 **Memory Storage**
+
 MatLab Workplace Storage:
     - variables created on the command line are stored in the base workspace until they are cleared or the session is closed 
     -All variabales are stroed as arrays given the matrix based structure of MATLAB
@@ -623,6 +624,7 @@ MatLab Workplace Storage:
     - Nested function also have their own workspace with the addtion of the feature that nested funciton can modifiy variables in the workspaces of the function containing them [^1]
    
 **Scoop Variables**
+
 - Variables exsit in memory until they are cleared or the session ended, with the execpetion of perstiant and global variables  
 <img width="621" alt="Screen Shot 2022-10-23 at 5 49 58 PM" src="https://user-images.githubusercontent.com/113360762/197419863-b969861c-a406-4450-8025-d282aa5fa34a.png">
     
