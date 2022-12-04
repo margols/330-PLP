@@ -710,11 +710,16 @@ newObjectName.property = x; %assigning values to the object
 getArea=(newObjectName)
 ``` 
 Example: <sup>Refer to object.m and objectTester.m</sup>
+
+
 <img width="704" alt="Screen Shot 2022-12-04 at 10 54 45 AM" src="https://user-images.githubusercontent.com/113360762/205501274-c78f7a3a-ea0f-4c88-a02d-f8fe1918b09e.png">
+
 Output:
+
 <img width="256" alt="Screen Shot 2022-12-04 at 10 55 30 AM" src="https://user-images.githubusercontent.com/113360762/205501318-69955238-5e42-4998-9c14-c772be64d39a.png">
 
-Initalizing the Class: 
+Initalizing the Class:
+
 <img width="232" alt="Screen Shot 2022-12-04 at 10 55 14 AM" src="https://user-images.githubusercontent.com/113360762/205501307-14b4bfc4-0b4d-44de-a39b-f5dfebd6def3.png">
 
 Output:
