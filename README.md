@@ -642,7 +642,7 @@ MatLab Workplace Storage:
     n = n*2
 end
 ```
--After calling myFun in the command prompt the output is:
+- After calling myFun in the command prompt the output is:
     - n=2 
     - n=4 
     - n=8 
@@ -682,6 +682,47 @@ end
 
 ```
 
+**Objects** 
+- MatLab is an object oriented programming langauge which allows users to combine data through functions that act on the data, methods. The following Object Oritented Procedures are supported in MATLAB.[^10]
+- Objects
+- Class
+- Ploymorphism 
+- Inhertience
+- Abstraction 
+- Encapsulation
+
+***Classes***
+Synatx: 
+``` cadence 
+classdef className
+    properties
+        value  %properties of the class
+    end 
+    methods
+        functions
+ end 
+ ```cadence 
+ Creating Instance and Assigning Values:
+In a seperate file then the class was created in:
+```cadence
+newObjectName = objectclassname;  %inializing the class
+newObjectName.property = x; %assigning values to the object 
+getArea=(newObjectName)
+``` 
+Example: <sup>Refer to object.m and objectTester.m</sup>
+<img width="704" alt="Screen Shot 2022-12-04 at 10 54 45 AM" src="https://user-images.githubusercontent.com/113360762/205501274-c78f7a3a-ea0f-4c88-a02d-f8fe1918b09e.png">
+Output:
+<img width="256" alt="Screen Shot 2022-12-04 at 10 55 30 AM" src="https://user-images.githubusercontent.com/113360762/205501318-69955238-5e42-4998-9c14-c772be64d39a.png">
+
+Initalizing the Class: 
+<img width="232" alt="Screen Shot 2022-12-04 at 10 55 14 AM" src="https://user-images.githubusercontent.com/113360762/205501307-14b4bfc4-0b4d-44de-a39b-f5dfebd6def3.png">
+
+Output:
+
+<img width="255" alt="Screen Shot 2022-12-04 at 10 55 39 AM" src="https://user-images.githubusercontent.com/113360762/205501331-b8ecd50f-e6a9-4ba0-b908-ff9ad4805504.png">
+
+
+
 
 --------------------------------------------------------------------------------------------------------
 References:
@@ -694,6 +735,8 @@ References:
  [^7]: [Using Boolean in MatLab](https://www.educba.com/matlab-boolean/)
  [^8]:(https://www.programiz.com/python-programming/recursion)
  [^9]: ( https://www.youtube.com/watch?v=hNR6fsksEu8 ) 
+ [^10]: (https://www.geeksforgeeks.org/object-oriented-programming-oops-in-matlab/)
+ [^11](https://www.educba.com/matlab-class/)
 
 
 
