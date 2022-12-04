@@ -709,7 +709,7 @@ newObjectName = objectclassname;  %inializing the class
 newObjectName.property = x; %assigning values to the object 
 getArea=(newObjectName)
 ``` 
-Example: <sup>Refer to object.m and objectTester.m</sup>
+Example (Adpated from[^11]): <sup>Refer to object.m and objectTester.m</sup>
 
 
 <img width="704" alt="Screen Shot 2022-12-04 at 10 54 45 AM" src="https://user-images.githubusercontent.com/113360762/205501274-c78f7a3a-ea0f-4c88-a02d-f8fe1918b09e.png">
@@ -726,6 +726,64 @@ Output:
 
 <img width="255" alt="Screen Shot 2022-12-04 at 10 55 39 AM" src="https://user-images.githubusercontent.com/113360762/205501331-b8ecd50f-e6a9-4ba0-b908-ff9ad4805504.png">
 
+***Types Of Methods***
+Defining Methods[^1]:
+- Methods can be defined in the class defiention or in a sperate file using the @Classname in the same folder 
+Ordinary Methods
+- Ordinary methods can operate on the objects of the class and return modified objects
+- Refer to example of objects which utilizes ordinary methods
+Class Constructor Methods
+- Special function that creates an instance of a class
+- accept input methods, assign the data stored in the properties, return initalized objects
+- Input agrument are objects in the class[^12]
+- The name of the Constructor must have the same name as the class
+- If there is no constuctor defined there is a default MatLab Constructor which initalizes the properties to default values 
+Syntax [^1]: 
+Pre-initalization: Compute agruments for superclass constructors 
+Object initalization: call supeclass constructors
+Post initalization: Preform Operations on Subclass
+**Needs work** [^12]
+
+Class Deconstructor Methods
+- Named delete, which MATLAB calls implictly before destroying an object of a handle class( rephrase) 
+- Must define one agrument which is an object in the class
+- Called as an Ordinary Methods 
+- For further information on the deconstructor class vist [](https://www.mathworks.com/help/matlab/matlab_oop/handle-class-destructors.html)
+
+Syntax:
+```cadence 
+methods
+   function delete(obj)
+      % obj is always scalar
+   ...
+   end
+end
+``` 
+
+Interface Class
+Interfaces determine how class users interact with the objects of the class
+- A common interface is defined for a group of classes but can be implemented in differnet in each class
+- An abtract class in which the implementation is not defined 
+- Names method that a subclass must implment 
+- Utilize interface to set permissions for methods 
+    - protected methodName = the users cannot alter the method 
+    - Example: protected setAcess can be used to protect a method for user acess
+    - 
+ 
+- 
+
+***Inheritence***
+Inheritence reduces duplicate code and allows for the modfication of subclasses without altering the superclass 
+
+Superclasses and Subclasses 
+- Treat the subclass like a superclass
+    - Methods of the superclass can act on the subclass 
+    - Methods of the subclass cannot act on the super class
+- Supports inheritence of implemneted methods by a superclass and inheritence of interfaces defined by an abstract class 
+- Limitations
+    - Arrays can only consist of one class, cannot mix superclass and sublasses 
+    
+
 
 
 
@@ -741,7 +799,8 @@ References:
  [^8]:(https://www.programiz.com/python-programming/recursion)
  [^9]: ( https://www.youtube.com/watch?v=hNR6fsksEu8 ) 
  [^10]: (https://www.geeksforgeeks.org/object-oriented-programming-oops-in-matlab/)
- [^11](https://www.educba.com/matlab-class/)
+ [^11]:(https://www.educba.com/matlab-class/)
+ [^12]:(http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/matlab_prog/ch14_o11.html)
 
 
 
