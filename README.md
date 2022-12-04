@@ -780,6 +780,14 @@ Superclasses and Subclasses
     - Methods of the superclass can act on the subclass 
     - Methods of the subclass cannot act on the super class
 - Supports inheritence of implemneted methods by a superclass and inheritence of interfaces defined by an abstract class 
+- Support multiple inheritence
+Syntax:
+```cadence
+classdef ClassName < SuperClass1 & SuperClass2
+
+% < symbol is used to indicate inheritence 
+```
+
 - Limitations
     - Arrays can only consist of one class, cannot mix superclass and sublasses 
     
