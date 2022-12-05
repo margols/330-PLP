@@ -807,7 +807,8 @@ Interfaces determine how class users interact with the objects of the class
 
 ***Inheritence***
 Inheritence reduces duplicate code and allows for the modfication of subclasses without altering the superclass 
-Example:
+Example(Code Adapted from MATLAB OOP Webinar) [^1]:
+
 <img width="514" alt="Screen Shot 2022-12-04 at 9 38 50 PM" src="https://user-images.githubusercontent.com/113360762/205537414-dcdca4fd-ca82-4012-97da-fdb68957acda.png">
 
 Superclasses and Subclasses 
