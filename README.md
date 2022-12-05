@@ -681,6 +681,7 @@ r = x;
 end  
 
 ```
+-------------------------------------------------------------------------------------------------------- 
 
 **Objects** 
 - MatLab is an object oriented programming langauge which allows users to combine data through functions that act on the data, methods. The following Object Oritented Procedures are supported in MATLAB.[^10]
@@ -726,12 +727,43 @@ Output:
 
 <img width="255" alt="Screen Shot 2022-12-04 at 10 55 39 AM" src="https://user-images.githubusercontent.com/113360762/205501331-b8ecd50f-e6a9-4ba0-b908-ff9ad4805504.png">
 
+
+***Class Types***
+Access:
+- Properties can have public or private access
+-By default properties are public, where anyone can change the value of the properties but cannot add or remove properties
+- Protected Access means the property values cannot be changed
+Syntax:
+
+```cadence
+%Property Types 
+properties (Access =protected)  %users cannot change the values, hidden from the displayed properties
+properties(constant)  % numbers that generally accepted (ex: pi) 
+properties(Dependent) % calcauted every time the value is asked for, use getter function to access
+```
+- Dependent properties:Do not store data and act on nondependent properties 
+    - Example: Height and width of a sqaure are nondependent properties and the area would be dependent because it is calculated from the nondependent properties.
+Get Function:
+- Get functions are utilzied to calculate dependent properties 
+Example:
+
+<img width="587" alt="Screen Shot 2022-12-04 at 8 41 33 PM" src="https://user-images.githubusercontent.com/113360762/205530994-e06a0e66-b8ea-422c-9e2f-caf09707908c.png">
+
+Syntax for calling get properties in the driver file
+```cadence 
+objectName.propertyName()
+```
+
+
+isa function
+interface class 
 ***Types Of Methods***
 Defining Methods[^1]:
 - Methods can be defined in the class defiention or in a sperate file using the @Classname in the same folder 
 Ordinary Methods
 - Ordinary methods can operate on the objects of the class and return modified objects
 - Refer to example of objects which utilizes ordinary methods
+
 Class Constructor Methods
 - Special function that creates an instance of a class
 - accept input methods, assign the data stored in the properties, return initalized objects
@@ -742,7 +774,10 @@ Syntax [^1]:
 Pre-initalization: Compute agruments for superclass constructors 
 Object initalization: call supeclass constructors
 Post initalization: Preform Operations on Subclass
-**Needs work** [^12]
+Example:
+
+<img width="548" alt="Screen Shot 2022-12-04 at 9 40 40 PM" src="https://user-images.githubusercontent.com/113360762/205537640-43cfcf00-7ed5-4f27-a91b-8114c967de38.png">
+
 
 Class Deconstructor Methods
 - Named delete, which MATLAB calls implictly before destroying an object of a handle class( rephrase) 
@@ -760,6 +795,7 @@ methods
 end
 ``` 
 
+
 Interface Class
 Interfaces determine how class users interact with the objects of the class
 - A common interface is defined for a group of classes but can be implemented in differnet in each class
@@ -768,12 +804,11 @@ Interfaces determine how class users interact with the objects of the class
 - Utilize interface to set permissions for methods 
     - protected methodName = the users cannot alter the method 
     - Example: protected setAcess can be used to protect a method for user acess
-    - 
- 
-- 
 
 ***Inheritence***
 Inheritence reduces duplicate code and allows for the modfication of subclasses without altering the superclass 
+Example:
+<img width="514" alt="Screen Shot 2022-12-04 at 9 38 50 PM" src="https://user-images.githubusercontent.com/113360762/205537414-dcdca4fd-ca82-4012-97da-fdb68957acda.png">
 
 Superclasses and Subclasses 
 - Treat the subclass like a superclass
@@ -790,7 +825,16 @@ classdef ClassName < SuperClass1 & SuperClass2
 
 - Limitations
     - Arrays can only consist of one class, cannot mix superclass and sublasses 
-    
+***Utilzing MATLAB WorkSpace***
+When creating objects the workspace displays the class type and properties of each object which can be useful
+
+<img width="342" alt="Screen Shot 2022-12-04 at 9 42 40 PM" src="https://user-images.githubusercontent.com/113360762/205537847-d3401e90-e6fa-486d-a135-a5d2bc7a175e.png">
+y has the class type person
+Double clicking on the class type results in an addtional tab which displays the object properties and values
+
+<img width="361" alt="Screen Shot 2022-12-04 at 9 44 01 PM" src="https://user-images.githubusercontent.com/113360762/205538009-553d4fd9-1317-48a5-8b15-2df72f0686a7.png">
+
+
 
 
 
@@ -816,6 +860,7 @@ References:
  
     
     
-  
+
+
 
 
