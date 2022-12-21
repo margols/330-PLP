@@ -82,8 +82,18 @@ Refer to DataTypes.m
 - MATLAB is weakly typed which means conversions between unrealted types is made implictly 
 - MATLAB is felxible with arithmitic between variabales types and it is up to the user to format the ouptut in the disired type
 - The limitations to the variables are in the division of different variables [^6]
+``` cadence 
+name = "john";
+name =67;
+disp(name)
+value = 67 + “lily”;
+disp(value) 
 
-********* Incldue Code Here***********
+Output: 
+name = 67 
+value = 67lily
+```
+
 
 
 ## Variables
@@ -633,8 +643,8 @@ The factorial of 3 is 6
 **Memory Storage**
 
 MatLab Workplace Storage:
-    - variables created on the command line are stored in the base workspace until they are cleared or the session is closed 
-    -All variabales are stroed as arrays given the matrix based structure of MATLAB
+    - Variables created on the command line are stored in the base workspace until they are cleared or the session is closed 
+    - All variabales are stroed as arrays given the matrix based structure of MATLAB
     - Every function has its own function workspace 
         - local variables (those that are specific to a function) typically do not remain in moving from one function to the next 
     - Nested function also have their own workspace with the addtion of the feature that nested funciton can modifiy variables in the workspaces of the function containing them [^1]
@@ -747,7 +757,7 @@ Output:
 ***Class Types***
 Access:
 - Properties can have public or private access
--By default properties are public, where anyone can change the value of the properties but cannot add or remove properties
+- By default properties are public, where anyone can change the value of the properties but cannot add or remove properties
 - Protected Access means the property values cannot be changed
 Syntax:
 
@@ -852,7 +862,9 @@ When creating objects the workspace displays the class type and properties of ea
 <img width="361" alt="Screen Shot 2022-12-04 at 9 44 01 PM" src="https://user-images.githubusercontent.com/113360762/205538009-553d4fd9-1317-48a5-8b15-2df72f0686a7.png">
 
 
-
+## Project: UNO 
+- This is a basic template for creating an UNO game using object oriented programming aspects
+- 
 
 
 
