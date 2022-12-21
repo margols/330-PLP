@@ -1,29 +1,37 @@
-This is a learning project for my Structure and Organization of Programming Languages course and  where I am creating a MatLab how to tutorial. 
-
+This is a learning project for my Structure and Organization of Programming Languages course. The below is a MatLab tutorial which covers the basics, including an examples project focusing on OPP in an UNO Game. Code Refereneced in the totorial is available in files at the top of the page and references can be found at the bottom.  
 
 <img src="https://user-images.githubusercontent.com/113360762/190497054-77f17b7d-10d6-4efc-9806-dfdb08e7347d.png" width="48">
 
-
 # The Histroy of MATLAB 
-**In the Beginning:**
 
-- Mat Lab was started by Cleve Molar at the University of New Mexico to offer his students easier access to LINPACK and EISPACK without having to write Fortran programs.
-- MatLab is short for Matrix Laboratory and the program first written in Fortran. Originally there were only 71 reserved words and functions built in, as its main purpose was to be an interactive matrix calculator. 
+- MATLAB was started by Cleve Molar at the University of New Mexico to offer his students easier access to LINPACK and EISPACK without having to write Fortran programs.
+- MATLAB is short for Matrix Laboratory and the program was first written in Fortran. Originally there were only 71 reserved words and functions built in, as its main purpose was to be an interactive matrix calculator. 
 - In 1983, Jack Little and Steve Bangert wrote a new extended version of MATLAB in C, which included a host of new aspects some of which included functions, toolboxes and graphics.
-- In 1984 MatLab became a commercially available product which was proposed by Little and Bangert in 1983.[^1]
+- In 1984 MatLab became a commercially available product which was proposed by Little and Bangert in 1983.[^1] 
 
-**Modern MatLab:**
+**Modern MATLAB:**
 
-- The current MatLab program includes the addition of a numerical solution of ordinary differential equations (ODE) as well as the expansion of data types. 
-- In 1996 structures and associated dot notation was added to MatLab.
+- MATLAB currently includes a host of updated features including numerical solution of ordinary differential equations (ODE) as well as an expansion of data types. 
+- In 1996 structures and associated dot notation was added to MATLAB.
 - Objects were added in 2008, enhancing MatLab's object oriented programming capabilities 
-- Separate windows for graphics, editing and other tools were added in 2000 along with the MatLab desktop. 
+- Separate windows for graphics, editing and other tools were added in 2000 along with the MATLAB Desktop. MATLAB Desktop helps users run commands, manage files and view results.  
 - In 2016 the live editor was introduced which combines descriptive text, input, output and graphics into one interactive document. 
-- Today MatLab is used in a wide range of fields, focusing on everything from deep and machine learning to computational finance and biology.
+- Today MATLAB is used in a wide range of fields, focusing on everything from deep and machine learning to computational finance and biology.
+- Disaplines that use MATLAB: [^1]
+    - Areospace and Defense      
+    - Biotech and Pharmaceutical 
+    - Railway Systems 
+    - Medical Devices 
+    - Semiconductors 
+- The main uses for MATLAB include:
+    - Analyze Data        
+    - Develop Algorithms  
+    - Matrix Calculator 
+    - Create Models and Applications
 - Some major companies using MatLab today are:[^3]
     - SpaceX, Intel, and General Atomics
     - The most popular use of MatLab is in Information Technology, followed by higher education and computer software[^1]
-[
+
 
 ## References for Getting Started 
 MatLab Documentation: [Mathworks](https://www.mathworks.com/help/matlab/) 
@@ -32,28 +40,29 @@ Hello World Powerpoint from Berkeley: [Berkeley Slides](https://math.berkeley.ed
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-
-
 # Getting Started 
-Installing MatLab:
-MatLab is available for a 30 day free trial, follow this link: [Downloading MatLab](https://www.mathworks.com/downloads/message/error_page/unlicensed?release=R2022b)
-  - Some university's have a license with MatLab or have the software downloaded on a Virutal Machine which is free of cost to students
-When downloading MatLab from Mathworks, follow the instructions prompted through the install.
-MatLab comes with a programming enviornment so there is no need to download an external programming environment. 
 
-### Writing Comments in MatLab
--Everything in MatLab is stored in a matrix
-- The symbol % can be used to comment in MatLab
+Installing MATLAB:
+MATLAB is available for a 30 day free trial, follow this link: [Downloading MatLab](https://www.mathworks.com/downloads/message/error_page/unlicensed?release=R2022b)
+  - Some university's have a license with MATLAB or have the software downloaded on a Virutal Machine which is free of cost to students
+When downloading MATLAB from Mathworks, follow the instructions prompted through the install.
+MATLAB comes with a programming enviornment, so there is no need to download an external programming environment. 
+
+## Syntax Basics
+### Comments and Delimitators 
+- The symbol % can be used to comment
+- ; is used to end a line, it is not required but hides the output of the line
 ``` cadence 
 %this is how you write a comment
+x = 78; 
 ``` 
 
-- In order to run code press the Run Selection button on the toolbar.
+- To run code press the Run Selection button on the toolbar.
 <img width="1213" alt="Screen Shot 2022-09-15 at 6 04 19 PM" src="https://user-images.githubusercontent.com/113360762/190516881-61af568d-fbd1-42e4-ad29-67b9d8283d3e.png">
 
 ## Writing "Hello World"
 
-Using fprintf() statement outputs a formated string [^4]
+Using fprintf() statement displayed formated in output, this is useful when printing different variable types of output[^4]
 
 
 Using disp(x) displays the value in the variable x [^5] 
@@ -183,11 +192,7 @@ idivide(num1,num2) %rounds to the closest integer
     MATLAB is cool
     ```  
     - The string array stores text as data 
-    ``` cadence 
-    c="MATLAB is Cool" 
-    disp(c) 
-    MATLAB is cool
-    ``` 
+
     ***Using Plus and Join***
     - Plus: Plus adds value to the elements in an array of strings
      ``` cadence 
