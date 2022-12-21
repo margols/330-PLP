@@ -51,7 +51,7 @@ MATLAB comes with a programming enviornment, so there is no need to download an 
 ## Syntax Basics
 ### Comments and Delimitators 
 - The symbol % can be used to comment
-- ; is used to end a line, it is not required but hides the output of the line
+- ; is used to end a line, it is not required but hides the output of the line in the terminal 
 ``` cadence 
 %this is how you write a comment
 x = 78; 
@@ -61,6 +61,7 @@ x = 78;
 <img width="1213" alt="Screen Shot 2022-09-15 at 6 04 19 PM" src="https://user-images.githubusercontent.com/113360762/190516881-61af568d-fbd1-42e4-ad29-67b9d8283d3e.png">
 
 ## Writing "Hello World"
+Refer to helloWorld.m 
 
 Using fprintf() statement displayed formated in output, this is useful when printing different variable types of output[^4]
 
@@ -77,50 +78,60 @@ Either format above will display Hello World in the Command Window
 # Data Types and Syntax
 Refer to DataTypes.m 
 
-- While C is statically typed, MATLAB is dynmically typed so you do not need to assign variables types before using them, the program will assign the type of the variable automatically 
+- MATLAB is dynmically typed, meaning variable types do not need to be assigned before use, the program will assign the type of the variable automatically 
 - MATLAB is weakly typed which means conversions between unrealted types is made implictly 
 - MATLAB is felxible with arithmitic between variabales types and it is up to the user to format the ouptut in the disired type
 - The limitations to the variables are in the division of different variables [^6]
 
+********* Incldue Code Here***********
 
 
 ## Variables
 
-- Variables are stored in MATLAB using the following format: 
+- Variables are stored using the following format: 
 ``` cadence 
-variable name = variable value; 
+variable_name = variable_value; 
 ``` 
 - By default MATLAB stores the numeric variabales as a Double type, which can be either a float or an integer 
 - The value of integers is stored in the workspace to the right of the workspace[^1]
 
 <img width="309" alt="Screen Shot 2022-09-25 at 7 48 29 PM" src="https://user-images.githubusercontent.com/113360762/192171097-67f83529-409a-4381-95f7-867ab205319b.png">
 
-- Variables are case senstive x != X, it is recommended to not use the same variabales for different values as the programming can get confusing 
--You must declare a variable before using it, typically variabales are defined first 
-- Using ; hides the output from the terminal
+- Variables are case senstive x != X, it is recommended to not use the same variable names for different values as the programming can get confusing 
+- the last assignment of the variable value will be the value saved
 ``` cadence 
-clear all ; % this will clear all of the variables  
+x = 67;
+x= name;
+disp(x) 
+Output: 
+name 
+```
+
+- You must declare a variable before using it, typically variabales are defined first 
+- To clear variables, both to preserve space in memory and debug altered code, the below will clear all variables saved in memory 
+``` cadence 
+clear all % this will clear all of the variables, type into the terminal   
 ``` 
 **Naming Conventions** 
--When naming variabales in MATLAB it is recommended that:
-    - variable names do not start with numbers, or _ or __ or reserved indefiers 
+- When naming variabales it is recommended that:
+    - Variable names do not start with numbers, or _ or __ or reserved identifiers 
     - For more information on reserved key words check out this 
         - [ MatLab Reserved Words]( https://www.mathworks.com/help/rtw/ug/reserved-keywords.html )
-     -Recommendations for naming convnetions:
+     - Recommendations for naming conventions:
      Source: [Naming Conventions](https://www.mathworks.com/help/simulink/mdl_gd/hi/naming-considerations.html) 
         - start name using: a-z, A-Z, 0-9, and the underscore (_).
         - Use strings that are more than 2 and less than 64 characters. (Not including the dot and file extension). 
         
 **Printing Variables**
-- using disp() vs fprinf
+- Refer to helloWorld.m Code 
 - When using fprintf C formating is required 
-- disp() will output the the value in the ()
-    
 
 **Integers** 
-- Integers are stored in MATLAB using the following format:[^1]
+- Since MATLAB is dynamically and weakly types data types to not need to be assigned unless specficied 
+
+- Integers are stored using the following format:[^1]
 ``` cadence 
-y=int8(34); %different int notion is used depending on the number being stored 
+y = int8(34); %different int notion is used depending on the number being stored 
 disp(y)
 
 Converting a value to an int:
@@ -138,11 +149,11 @@ When using the integers fucntion will round the value to the closest integer, if
 ``` cadence 
 z=5;
 x=56; 
-r=x+z; % output will be stored in ans 
-%assigns the value of x +z to r 
+x+z % output will be stored in ans, becuase there is no deliminator output will be displayed on the terminal 
 
-x+z 
-Will store the output in ans, printing it out to the terminal as well
+Output: 
+ans = 61 
+
 
 ``` 
 - Adding ints and strings
