@@ -180,7 +180,7 @@ x=56;
 r=x-z; Output will be stored in ans 
 Assigns the value of x - z to r 
 
-x+z  #Will store the output in ans, printing it out to the terminal as well
+x+z  %Will store the output in ans, printing it out to the terminal as well
 
 ``` 
 - CODE EXAMPLE FOR MULTIPLICATION and DIVISION 
@@ -340,10 +340,10 @@ M('dog') %output 12
 - See condtionals.m and operatorDemo.m 
 **Condtional Statements**
 
-- code blocks are deliminated using ; at the end of if statments, see code example below 
+- Code blocks are deliminated using ; at the end of if staements, see code example below 
 - if/ else statements
 Syntax:
-```
+``` cadence
     if expression
     statements
 elseif expression
@@ -604,7 +604,6 @@ disp(sum1)
 function sum1 = calculateSum(x)
     sum1 = sum(x(:)); 
 end
-
 ```
 
 - Functions must be placed at the end of a file, or in a serpate file in which the file name must match the name of the first function 
@@ -860,12 +859,6 @@ When creating objects the workspace displays the class type and properties of ea
 - Double clicking on the class type results in an addtional tab which displays the object properties and values
 
 <img width="361" alt="Screen Shot 2022-12-04 at 9 44 01 PM" src="https://user-images.githubusercontent.com/113360762/205538009-553d4fd9-1317-48a5-8b15-2df72f0686a7.png">
-
-
-## Project: UNO 
-- This is a basic template for creating an UNO game using object oriented programming aspects
-- 
-
 
 
 --------------------------------------------------------------------------------------------------------
