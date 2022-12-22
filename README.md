@@ -856,6 +856,7 @@ When creating objects the workspace displays the class type and properties of ea
 
 <img width="342" alt="Screen Shot 2022-12-04 at 9 42 40 PM" src="https://user-images.githubusercontent.com/113360762/205537847-d3401e90-e6fa-486d-a135-a5d2bc7a175e.png">
 - y has the class type person
+
 - Double clicking on the class type results in an addtional tab which displays the object properties and values
 
 <img width="361" alt="Screen Shot 2022-12-04 at 9 44 01 PM" src="https://user-images.githubusercontent.com/113360762/205538009-553d4fd9-1317-48a5-8b15-2df72f0686a7.png">
