@@ -584,6 +584,7 @@ end
 
 # Functions 
 Reference Functions.m 
+
 - Syntax for declaring functions
 - Functions can accpet multiple input and output, variables must be created to catch the returned values[^1]
 ```
@@ -711,6 +712,7 @@ end
 -------------------------------------------------------------------------------------------------------- 
 
 **Objects** 
+Refer to Person.m, objects.m, person.tester
 - MatLab is an object oriented programming langauge which allows users to combine data through functions that act on the data, methods. The following Object Oritented Procedures are supported in MATLAB.[^10]
 - Objects
 - Class
@@ -782,8 +784,7 @@ objectName.propertyName()
 ```
 
 
-isa function
-interface class 
+
 ***Types Of Methods***
 Defining Methods[^1]:
 - Methods can be defined in the class defiention or in a sperate file using the @Classname in the same folder 
@@ -824,6 +825,7 @@ end
 
 
 Interface Class
+Refer to Interface.m
 Interfaces determine how class users interact with the objects of the class
 - A common interface is defined for a group of classes but can be implemented in differnet in each class
 - An abtract class in which the implementation is not defined 
@@ -833,6 +835,7 @@ Interfaces determine how class users interact with the objects of the class
     - Example: protected setAcess can be used to protect a method for user acess
 
 ***Inheritence***
+Refer to dogInhertitence.m
 Inheritence reduces duplicate code and allows for the modfication of subclasses without altering the superclass 
 Example(Code Adapted from MATLAB OOP Webinar) [^1]:
 
@@ -853,6 +856,7 @@ classdef ClassName < SuperClass1 & SuperClass2
 
 - Limitations
     - Arrays can only consist of one class, cannot mix superclass and sublasses 
+    
 ***Utilzing MATLAB WorkSpace***
 When creating objects the workspace displays the class type and properties of each object which can be useful
 
