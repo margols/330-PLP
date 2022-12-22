@@ -583,7 +583,7 @@ end
 
 
 # Functions 
-Reference Functions.m 
+Reference Functions.m, and myFun.m 
 
 - Syntax for declaring functions
 - Functions can accpet multiple input and output, variables must be created to catch the returned values[^1]
