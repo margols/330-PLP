@@ -1,4 +1,4 @@
-This is a learning project for my Structure and Organization of Programming Languages course. The below is a MatLab tutorial which covers the basics, including an examples project focusing on OPP in an UNO Game. Code Refereneced in the totorial is available in files at the top of the page and references can be found at the bottom.  
+This is a learning project for my Structure and Organization of Programming Languages course. The below is a MATLAB tutorial which covers the basics, including an examples project focusing on OPP in an UNO Game. Code Refereneced in the totorial is available in files at the top of the page and references can be found at the bottom.  
 
 <img src="https://user-images.githubusercontent.com/113360762/190497054-77f17b7d-10d6-4efc-9806-dfdb08e7347d.png" width="48">
 
