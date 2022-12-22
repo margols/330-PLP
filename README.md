@@ -867,6 +867,14 @@ When creating objects the workspace displays the class type and properties of ea
 
 <img width="361" alt="Screen Shot 2022-12-04 at 9 44 01 PM" src="https://user-images.githubusercontent.com/113360762/205538009-553d4fd9-1317-48a5-8b15-2df72f0686a7.png">
 
+***Utlizing Class Diagram Creator in MATLAB****
+The below is the Class diagram generated using the code: 
+``` cadence matlab.diagram.ClassViewer ``` 
+
+The Class diagram is based on the creation of an UNO gamed based an OOP appraoch. The Class Diagram viewer is helpful in tracking properties and class relations. 
+<img width="1432" alt="Screen Shot 2022-12-22 at 3 36 42 PM" src="https://user-images.githubusercontent.com/113360762/209221688-ea94b06f-7b6e-48aa-ade2-bebe9ba12bfd.png">
+
+
 
 --------------------------------------------------------------------------------------------------------
 References:
