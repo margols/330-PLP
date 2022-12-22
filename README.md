@@ -168,7 +168,7 @@ ans = 61
 ``` 
 - Adding ints and strings
     - When adding strings an ints, the output is converted to a string
-    ```cadence
+    ``` cadence
     f="5" + 6 ; 
     disp(f)
     Output: "56" ```
