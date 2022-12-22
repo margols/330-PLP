@@ -337,7 +337,9 @@ M('dog') %output 12
 --------------------------------------------------------------------------------------------------------
 
 # Selection and Condtionals 
+
 - See condtionals.m and operatorDemo.m 
+
 **Condtional Statements**
 
 - Code blocks are deliminated using ; at the end of if staements, see code example below 
